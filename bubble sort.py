@@ -1,7 +1,10 @@
-def add_fruit(fruit_list, fruit):
-    if fruit not in fruit_list:
-        fruit_list.append(fruit)
-    return fruit_list
+def remove_fruit(fruit_list, fruit):
+    if fruit in fruit_list:
+        fruit_list.remove(fruit)
+        print(fruit_list)
+        return fruit_list
+    else:
+        print(f"Fruit '{fruit}' not found in the list")
+        return fruit_list
 
-fruits = ["apple", "banana", "cherry"]
-print(add_fruit(fruits, "orange"))
+
